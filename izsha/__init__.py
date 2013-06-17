@@ -1,3 +1,4 @@
 from replay_event import OnReplay
 from process_replay import process_replay
 from process_replay import time_and_players
+from event_api import fetch_events

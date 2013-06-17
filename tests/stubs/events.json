@@ -1,0 +1,321 @@
+[
+    {
+        "id": "51ba0a8fbe8de64372000001",
+        "title": "WCS Korea Premier League Ro32 Group C",
+        "streams": [],
+        "starts_at": "2013-06-20T09:00:00+00:00",
+        "ends_at": "2013-06-20T13:00:00+00:00",
+        "rebroadcast": false,
+        "groups": [],
+        "tags_array": [
+            "2013",
+            "Korea",
+            "Premier",
+            "OGN",
+            "Round of 32",
+            "Season 2",
+            "Group C",
+            "WCS"
+        ],
+        "teams": [
+            {
+                "id": "51803ccd5f23eaddb300004e",
+                "slug": "sos",
+                "name": "sOs",
+                "image_url": "",
+                "race": "Protoss",
+                "full_name": "Yoo Jin Kim",
+                "full_name_ko": "ê¹€ìœ ì§„",
+                "country": "South Korea"
+            },
+            {
+                "id": "51803d255f23eaddb300005b",
+                "slug": "maru",
+                "name": "Maru",
+                "image_url": "",
+                "race": "Terran",
+                "full_name": "Sung Choo Cho",
+                "full_name_ko": "ì¡°ì„±ì£¼",
+                "country": "South Korea"
+            },
+            {
+                "id": "51803db65f23eaddb300006c",
+                "slug": "soo",
+                "name": "soO",
+                "image_url": "",
+                "race": "Zerg",
+                "full_name": "Yoon Su Eo",
+                "full_name_ko": "ì–´ìœ¤ìˆ˜",
+                "country": "South Korea"
+            },
+            {
+                "id": "519ba97554da2649d3000001",
+                "slug": "effort",
+                "name": "EffOrt",
+                "image_url": "",
+                "race": "Zerg",
+                "full_name": "Kim Jung Woo",
+                "full_name_ko": "ê¹€ì •ìš°",
+                "country": "South Korea"
+            }
+        ]
+    },
+    {
+        "id": "51ba0a63be8de652bd000001",
+        "title": "WCS Korea Premier League Ro32 Group A",
+        "streams": [],
+        "starts_at": "2013-06-18T09:00:00+00:00",
+        "ends_at": "2013-06-18T13:00:00+00:00",
+        "rebroadcast": false,
+        "groups": [],
+        "tags_array": [
+            "2013",
+            "Korea",
+            "Premier",
+            "OGN",
+            "Round of 32",
+            "Season 2",
+            "Group A",
+            "WCS"
+        ],
+        "teams": [
+            {
+                "id": "51803d135f23eaddb3000059",
+                "slug": "flash",
+                "name": "Flash",
+                "image_url": "",
+                "race": "Terran",
+                "full_name": "Young Ho Lee",
+                "full_name_ko": "ì´ì˜í˜¸",
+                "country": "South Korea"
+            },
+            {
+                "id": "51803d605f23eaddb3000061",
+                "slug": "soulkey",
+                "name": "Soulkey",
+                "image_url": "",
+                "race": "Zerg",
+                "full_name": "Min Chul Kim",
+                "full_name_ko": "ê¹€ë¯¼ì² ",
+                "country": "South Korea"
+            },
+            {
+                "id": "519babb754da26dac6000002",
+                "slug": "ragnarok",
+                "name": "RagnaroK",
+                "image_url": "",
+                "race": "Zerg",
+                "full_name": "Shin Hee Bum",
+                "full_name_ko": "ì‹ í¬ë²”",
+                "country": "South Korea"
+            },
+            {
+                "id": "519bb2e654da2649d3000006",
+                "slug": "yugioh",
+                "name": "YugiOh",
+                "image_url": "",
+                "race": "Zerg",
+                "full_name": "Jung Seung Il",
+                "full_name_ko": "ì •ìŠ¹ì¼",
+                "country": "South Korea"
+            }
+        ]
+    },
+    {
+        "id": "51a696d754da260dd8000001",
+        "title": "WCS Season 1 Final",
+        "streams": [],
+        "starts_at": "2013-06-09T07:00:00+00:00",
+        "ends_at": "2013-06-09T10:00:00+00:00",
+        "rebroadcast": false,
+        "groups": [],
+        "tags_array": [
+            "2013",
+            "Season Finals",
+            "OGN",
+            "Final",
+            "Season 1",
+            "WCS"
+        ],
+        "teams": [
+            {
+                "id": "51803ccd5f23eaddb300004e",
+                "slug": "sos",
+                "name": "sOs",
+                "image_url": "",
+                "race": "Protoss",
+                "full_name": "Yoo Jin Kim",
+                "full_name_ko": "ê¹€ìœ ì§„",
+                "country": "South Korea"
+            },
+            {
+                "id": "51803ced5f23eaddb3000052",
+                "slug": "innovation",
+                "name": "INnoVation",
+                "image_url": "",
+                "race": "Terran",
+                "full_name": "Shin Hyung Lee",
+                "full_name_ko": "ì´ì‹ í˜•",
+                "country": "South Korea"
+            }
+        ]
+    },
+    {
+        "id": "51a69613be8de6dc05000001",
+        "title": "WCS Season 1 Semi-Finals",
+        "streams": [],
+        "starts_at": "2013-06-08T23:30:00+00:00",
+        "ends_at": "2013-06-09T07:00:00+00:00",
+        "rebroadcast": false,
+        "groups": [],
+        "tags_array": [
+            "2013",
+            "Season Finals",
+            "OGN",
+            "Semi-Final",
+            "Season 1",
+            "WCS"
+        ],
+        "teams": [
+            {
+                "id": "51803c105f23eaddb3000031",
+                "slug": "mvp",
+                "name": "Mvp",
+                "image_url": "",
+                "race": "Terran",
+                "full_name": "Jong Hyun Jung",
+                "full_name_ko": "ì •ì¢…í˜„",
+                "country": "South Korea"
+            },
+            {
+                "id": "51803ccd5f23eaddb300004e",
+                "slug": "sos",
+                "name": "sOs",
+                "image_url": "",
+                "race": "Protoss",
+                "full_name": "Yoo Jin Kim",
+                "full_name_ko": "ê¹€ìœ ì§„",
+                "country": "South Korea"
+            },
+            {
+                "id": "51803ced5f23eaddb3000052",
+                "slug": "innovation",
+                "name": "INnoVation",
+                "image_url": "",
+                "race": "Terran",
+                "full_name": "Shin Hyung Lee",
+                "full_name_ko": "ì´ì‹ í˜•",
+                "country": "South Korea"
+            },
+            {
+                "id": "51803d605f23eaddb3000061",
+                "slug": "soulkey",
+                "name": "Soulkey",
+                "image_url": "",
+                "race": "Zerg",
+                "full_name": "Min Chul Kim",
+                "full_name_ko": "ê¹€ë¯¼ì² ",
+                "country": "South Korea"
+            }
+        ]
+    },
+    {
+        "id": "51a6956154da26f164000002",
+        "title": "WCS Season 1 Finals Ro8",
+        "streams": [],
+        "starts_at": "2013-06-08T01:00:00+00:00",
+        "ends_at": "2013-06-08T11:00:00+00:00",
+        "rebroadcast": false,
+        "groups": [],
+        "tags_array": [
+            "2013",
+            "Season Finals",
+            "OGN",
+            "Round of 8",
+            "Season 1",
+            "WCS"
+        ],
+        "teams": [
+            {
+                "id": "51803bbb5f23eaddb3000021",
+                "slug": "alicia",
+                "name": "Alicia",
+                "image_url": "",
+                "race": "Protoss",
+                "full_name": "Joon Sik Yang",
+                "full_name_ko": "ì–‘ì¤€ì‹",
+                "country": "South Korea"
+            },
+            {
+                "id": "51803c105f23eaddb3000031",
+                "slug": "mvp",
+                "name": "Mvp",
+                "image_url": "",
+                "race": "Terran",
+                "full_name": "Jong Hyun Jung",
+                "full_name_ko": "ì •ì¢…í˜„",
+                "country": "South Korea"
+            },
+            {
+                "id": "51803c245f23eaddb3000034",
+                "slug": "forgg",
+                "name": "ForGG",
+                "image_url": "",
+                "race": "Terran",
+                "full_name": "Ji Soo Park",
+                "full_name_ko": "ë°•ì§€ìˆ˜",
+                "country": "South Korea"
+            },
+            {
+                "id": "51803ccd5f23eaddb300004e",
+                "slug": "sos",
+                "name": "sOs",
+                "image_url": "",
+                "race": "Protoss",
+                "full_name": "Yoo Jin Kim",
+                "full_name_ko": "ê¹€ìœ ì§„",
+                "country": "South Korea"
+            },
+            {
+                "id": "51803ced5f23eaddb3000052",
+                "slug": "innovation",
+                "name": "INnoVation",
+                "image_url": "",
+                "race": "Terran",
+                "full_name": "Shin Hyung Lee",
+                "full_name_ko": "ì´ì‹ í˜•",
+                "country": "South Korea"
+            },
+            {
+                "id": "51803d605f23eaddb3000061",
+                "slug": "soulkey",
+                "name": "Soulkey",
+                "image_url": "",
+                "race": "Zerg",
+                "full_name": "Min Chul Kim",
+                "full_name_ko": "ê¹€ë¯¼ì² ",
+                "country": "South Korea"
+            },
+            {
+                "id": "51803d655f23eaddb3000062",
+                "slug": "roro",
+                "name": "RorO",
+                "image_url": "",
+                "race": "Zerg",
+                "full_name": "No Yeol Shin",
+                "full_name_ko": "ì‹ ë…¸ì—´",
+                "country": "South Korea"
+            },
+            {
+                "id": "518041e05f23eaddb3000088",
+                "slug": "alive",
+                "name": "aLive",
+                "image_url": "",
+                "race": "Terran",
+                "full_name": "Lee Seok Han",
+                "full_name_ko": "í•œì´ì„",
+                "country": "South Korea"
+            }
+        ]
+    }
+]
