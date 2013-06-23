@@ -1,6 +1,7 @@
 import urllib2, izsha_config, datetime, json
+from event import Event
 
-def fetch_events(url, start_time=None, players=None, time_range=6,):
+def fetch_events(url, start_time=None, players=None, time_range=6):
     query = ""
     if start_time != None:
         range_start = (start_time - datetime.timedelta(hours=time_range)).isoformat()
@@ -11,4 +12,11 @@ def fetch_events(url, start_time=None, players=None, time_range=6,):
     res = urllib2.urlopen(url + query)
     out = res.read()
     print(query)
-    return json.loads(out)
+    return [event_factory(ev) for ev in json.loads(out)]
+
+def event_factory(raw_event):
+    new_event = Event(raw_event['starts_at'], raw_event['ends_at'])
+    new_event.title = raw_event['title']
+    new_event.set_teams([player['name'] for player in raw_event['teams']])
+    new_event.set_tags(raw_event['tags_array'])
+    return new_event
