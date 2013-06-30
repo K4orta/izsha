@@ -11,7 +11,7 @@ from game import Game
 def process_replay(path):
 	game = time_and_players(path)
 	event = filter_events(event_api.fetch_events(izsha_config.event_api_url, game["start_time"], game["players"]), game)
-
+	print(path)
 	return event
 
 def filter_events(events, game):
@@ -30,7 +30,6 @@ def filter_events(events, game):
 				selected = ev
 		filtered = [selected]
 		
-	print filtered[0].tags
 	return filtered
 
 def has_all_teams(search_ar, teams):
@@ -45,4 +44,5 @@ def time_and_players(path):
 		"end_time": replay.end_time,
 		"players": [replay.players[0].name, replay.players[1].name]
 	}
-	return Game([replay.players[0].name, replay.players[1].name], replay.start_time, replay.end_time)
+	
+	return Game([replay.players[0].name, replay.players[1].name], replay.start_time, replay.end_time, [player.uid for player in replay.players])

@@ -2,11 +2,12 @@ from alias_dictionary import AliasDictionary
 import izsha_config
 class Game:
 	aliases = AliasDictionary(izsha_config.alias_dictionary)
-	def __init__(self, players, start_time, end_time):
+	def __init__(self, players, start_time, end_time, bids):
 		self.start_time = start_time
 		self.end_time = end_time
 		self.set_players(players)
-
+		self.player_ids = bids
+		print (self.player_ids) 
 
 	@property 
 	def players(self):
@@ -30,3 +31,4 @@ class Game:
 	@end_time.setter
 	def end_time(self, time):
 		self.__end_time = time
+
