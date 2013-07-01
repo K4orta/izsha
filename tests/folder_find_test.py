@@ -14,5 +14,9 @@ def test_not_enough_tags():
 def test_too_many_tags():
 	pass
 
-def find_set():
-	pass
+def test_find_set():
+	final_path = izsha.find_set("tests", ["WCS","2013","Season 1","OGN","Season Finals","Semi-Final"])
+	assert final_path == "tests/WCS/2013/Season 1/OGN/Season Finals/Semi-Final/set1"
+
+def teardown_module(module):
+	os.rmdir(os.path.join("tests", *["WCS","2013","Season 1","OGN","Season Finals","Semi-Final", "set1"]))

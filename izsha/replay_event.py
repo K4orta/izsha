@@ -6,9 +6,7 @@ class OnReplay(FileSystemEventHandler):
         self.__process_callback = process_callback
         self.__on_finish = on_finish
 
-    # we are about: create files, modify directory
     def on_modified(self, event):
-        
         self.__on_finish(self.__process_callback(event.src_path))
 
     def on_created(self, event):

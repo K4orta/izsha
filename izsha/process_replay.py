@@ -11,8 +11,12 @@ from game import Game
 def process_replay(path):
 	game = time_and_players(path)
 	event = filter_events(event_api.fetch_events(izsha_config.event_api_url, game["start_time"], game["players"]), game)
-	print(path)
+	dest_folder = find_matchup_folder(game, event)
+	err = move_replay(path, dest_folder)
 	return event
+
+def move_replay():
+	pass
 
 def filter_events(events, game):
 	# remove events that don't contain both players
@@ -39,10 +43,4 @@ def has_all_teams(search_ar, teams):
 
 def time_and_players(path):
 	replay = sc2reader.load_replay(path)
-	game = {
-		"start_time": replay.start_time,
-		"end_time": replay.end_time,
-		"players": [replay.players[0].name, replay.players[1].name]
-	}
-	
 	return Game([replay.players[0].name, replay.players[1].name], replay.start_time, replay.end_time, [player.uid for player in replay.players])
