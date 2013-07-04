@@ -13,7 +13,8 @@ def find_set(root_dir, event_tags):
 	sets = os.listdir( os.path.join(event_path, ))
 	set_num = 1
 	set_dir = "set{0}".format(set_num)
-	os.mkdir(os.path.join( event_path, set_dir))
+	if not os.path.exists(os.path.join( event_path, set_dir)):
+		os.mkdir(os.path.join( event_path, set_dir))
 	return os.path.join( event_path, set_dir)
 
 def find_tag(root_path, tags, proper_path=()):

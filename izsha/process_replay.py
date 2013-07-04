@@ -5,18 +5,23 @@
 #     and move the file into the correct directory in the WCS folder
 #     the processed file should be removed from the unsorted directory
 #     if there is an error in this process, the replay should be left in the unsorted folder
-import sc2reader, event_api, izsha_config
+import sc2reader, event_api, izsha_config, os
 from game import Game
+from locate_directory import find_matchup_folder
 
 def process_replay(path):
 	game = time_and_players(path)
-	event = filter_events(event_api.fetch_events(izsha_config.event_api_url, game["start_time"], game["players"]), game)
-	dest_folder = find_matchup_folder(game, event)
+	if game == None:
+		return None;
+	event = filter_events(event_api.fetch_events(izsha_config.event_api_url, game.start_time, game.players), game)
+	dest_folder = find_matchup_folder(game, event[0])
 	err = move_replay(path, dest_folder)
 	return event
 
-def move_replay():
-	pass
+def move_replay(src, dest):
+	dest_file = os.path.join(dest, os.path.basename(src))
+	os.rename(src, dest_file)
+	return None
 
 def filter_events(events, game):
 	# remove events that don't contain both players
@@ -42,5 +47,7 @@ def has_all_teams(search_ar, teams):
 	return expected_matches
 
 def time_and_players(path):
-	replay = sc2reader.load_replay(path)
-	return Game([replay.players[0].name, replay.players[1].name], replay.start_time, replay.end_time, [player.uid for player in replay.players])
+	if os.path.exists(path):
+		replay = sc2reader.load_replay(path)
+		return Game([replay.players[0].name, replay.players[1].name], replay.start_time, replay.end_time, [player.uid for player in replay.players])
+	return None
