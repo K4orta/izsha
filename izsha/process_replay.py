@@ -14,6 +14,9 @@ def process_replay(path):
 	if game == None:
 		return None;
 	event = filter_events(event_api.fetch_events(izsha_config.event_api_url, game.start_time, game.players), game)
+	if len(event) < 1:
+		return None
+	print event[0].title
 	dest_folder = find_matchup_folder(game, event[0])
 	err = move_replay(path, dest_folder)
 	return event
@@ -25,6 +28,7 @@ def move_replay(src, dest):
 
 def filter_events(events, game):
 	# remove events that don't contain both players
+	print("players: {0}".format(game.players))
 	filtered = [event for event in events if event.has_teams(game.players)]
 	# remove events when the game is played before the event starts
 	filtered = [event for event in filtered if event.start_time < game.start_time]
@@ -38,7 +42,7 @@ def filter_events(events, game):
 				lowest = cur_delta
 				selected = ev
 		filtered = [selected]
-		
+	# print("Found {0} with the tags {1}".format(filtered[0].title, filtered[0].tags))
 	return filtered
 
 def has_all_teams(search_ar, teams):
@@ -49,5 +53,10 @@ def has_all_teams(search_ar, teams):
 def time_and_players(path):
 	if os.path.exists(path):
 		replay = sc2reader.load_replay(path)
-		return Game([replay.players[0].name, replay.players[1].name], replay.start_time, replay.end_time, [player.uid for player in replay.players])
+		return Game([replay.players[0].name, replay.players[1].name], 
+			replay.start_time, 
+			replay.end_time, 
+			[player.uid for player in replay.players],
+			replay.winner.players[0].name
+			)
 	return None

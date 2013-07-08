@@ -9,3 +9,4 @@ from alias_dictionary import AliasDictionary
 from locate_directory import find_tag
 from locate_directory import find_set
 from locate_directory import find_matchup_folder
+from meta_io import open_meta
